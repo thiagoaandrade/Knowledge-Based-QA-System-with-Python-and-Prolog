@@ -15,6 +15,7 @@ faculty('faculty of social science').
 faculty('faculty of arts and humanities').
 faculty('faculty of business studies').
 faculty('faculty of law').
+number_of_students('150').
 
 faculties('faculty of mathematical and physical science, faculty of biological science, faculty of social science, faculty of arts and humanities, faculty of business studies, faculty of law').
 
@@ -94,7 +95,7 @@ number_of_departments(X, Y) :-
 number_of_institutes(X, Y) :-
     name(X),
     number_of_institutes(Y).
-
+    
 faculties(X, Y) :-
     name(X),
     faculties(Y).

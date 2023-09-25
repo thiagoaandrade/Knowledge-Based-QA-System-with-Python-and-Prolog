@@ -56,6 +56,12 @@ while flg:
         query = "name(" + question + ")."
         answers = ask_question(query)
         say_answers("The name of the university ", "", question, answers)
+    
+    elif("number of students" in asked_question):
+        question = "NumberStudents"
+        query = f"estudantes({ question })."
+        answers = ask_question(query)
+        say_answers("Quantidade de estudantes", "", question, answers)
 
     elif (
         "introduction" in asked_question
