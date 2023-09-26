@@ -57,11 +57,40 @@ while flg:
         answers = ask_question(query)
         say_answers("The name of the university ", "", question, answers)
     
-    elif("number of students" in asked_question):
+    elif("numero de estudantes" in asked_question):
+        # Q: Qual o numero de estudantes do campus?
         question = "NumberStudents"
-        query = f"estudantes({ question })."
+        query = "number_of_students(" + question + ")."
         answers = ask_question(query)
         say_answers("Quantidade de estudantes", "", question, answers)
+    
+    elif("numero de cursos" in asked_question or "quantos cursos tem o campus" in asked_question):
+        # Q: Qual o numero de cursos do campus?
+        question = "NumeroCursos"
+        query = "numero_de_cursos(" + question + ")."
+        answers = ask_question(query)
+        say_answers("Existem", "cursos na UFC de Itapajé", question, answers)
+
+    elif("nome dos cursos" in asked_question or "qual é o nome do cursos" in asked_question):
+        # Q: Qual o nome dos cursos do campus?
+        question = "NomeCursos"
+        query = "cursos(" + question + ")."
+        answers = ask_question(query)
+        say_answers("Existem 3 cursos na UFC de Itapajé e eles são:", "", question, answers)
+    
+    elif("local do campus" in asked_question or 'onde fica o campus'):
+        # Q: Qual o local do campus?
+        question = "LocalCampus"
+        query = "local_do_campus(" + question + ")."
+        answers = ask_question(query)
+        say_answers("O campus fica em", "", question, answers)
+
+    elif("nome do campus" in asked_question or "qual é o nome do campus" in asked_question):
+        # Q: Qual o nome do campus?
+        question = "CampusName"
+        query = "nome(" + question + ")."
+        answers = ask_question(query)
+        say_answers("", "", question, answers)
 
     elif (
         "introduction" in asked_question

@@ -1,4 +1,11 @@
 name('jahangirnagar university').
+
+nome('Universidade Federal do Ceará').
+numero_de_cursos('3').
+number_of_students('150').
+cursos('Analise e Desenvolvimento de Sistemas - ADS, Ciência de Dados - CD, Segurança da Informação - SI').
+local_do_campus('Itapaje').
+
 breif_description('Jahangirnagar University is a public university in Bangladesh, based in Savar Upazila, Dhaka. It is one of the top and only fully residential universities in Bangladesh. There are 34 departments, 4 institutes under six faculties.').
 location('jahangirnagar university stands on the west side of the Asian Highway, popularly known as the Dhaka-Aricha Road, and is 32 kilometres away from the capital').
 established('jahangirnagar university', '1970').
